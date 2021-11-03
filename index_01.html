@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_01.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="home-container">
+
+        <div id="toggle" class="menu">
+            <h4>MENU</h4>
+        </div>
+        <div id="home" class="logo">
+            <img src="avez-logo.png" alt="avez-logo" srcset="">
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#about">About Us</a> </li>
+                <li> <a href="#projects">Projects</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+                <li> <a href="#other">Other</a> </li>
+            </ul>
+
+            <section class="sidebar-section">
+                <p>
+                    I'm a <span class="high-light">Frontend Web Developer </span> building the Front-end of Websites and
+                    Web Applications that leads
+                    to
+                    the
+                    success of the overall product. Check out some of my work in the <span class="high-light">Projects
+                    </span> section.
+                </p>
+            </section>
+        </div>
+
+        <script>
+            const toggle = document.getElementById('toggle');
+            const sidebar = document.getElementById('sidebar');
+
+            document.onclick = function (e) {
+                if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+                    toggle.classList.remove('active');
+                    sidebar.classList.remove('active')
+                }
+            }
+
+            toggle.onclick = function () {
+                toggle.classList.toggle('active');
+                sidebar.classList.toggle('active')
+            }
+        </script>
+
+        <script>
+            window.addEventListener("scroll", function(){
+                var menu = document.querySelector("menu");
+                MENU.classList.toggle("menu",window.scrollY > 0);
+            })
+        </script>
+
+
+
+        <div class="home-content">
+            <div class="home-social">
+
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"><span class="soc-span">Facebook</span></a></li>
+                    <li><a href="#" class="fa fa-instagram"><span class="soc-span">Instagram</span></a></li>
+                    <li><a href="#" class="fa fa-linkedin"><span class="soc-span">Linkedin</span></a></li>
+                    <li><a href="#" class="fa fa-github"><span class="soc-span">Github</span></a></li>
+                    <li><a href="#" class="fa fa-twitter"><span class="soc-span">Twitter</span></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-home-content">
+            <h2>HEY, I'M AVEZ QURESHI</h2>
+            <h1>A Frontend focused Web Developer <br> building the Frontend of Websites<br> that leads to the success of
+                the overall product</h1>
+            <div class="buttons1">
+                <a href="#projects"> <button class="btn" id="btn1">VIEW PROJECTS</button></a>
+                <a href="#about"><button class="btn" id="btn2">MORE ABOUT ME</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+
+        <div class="primary-about-control">
+
+            <div id="about" class="about-container">
+
+                <h2>About ME</h2>
+                <span class="p1">Here you will find more information about me, what I do, and my current skills mostly
+                    in terms
+                    of
+                    programming and technology</span>
+                <div class="secondary-about-control">
+
+
+                    <div class="content_details">
+                        <h3>Get to know me!</h3>
+
+                        <p class="p2">
+                            I'm a <span class="high-light">Frontend Web Developer </span> building the Front-end of
+                            Websites and Web Applications that leads
+                            to
+                            the
+                            success of the overall product. Check out some of my work in the <span
+                                class="high-light">Projects </span> section.
+                        </p>
+                        <br>
+                        <p class="p2">
+                            I also like sharing content related to the stuff that I have learned over the years in Web
+                            Development so it
+                            can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin
+                            where I
+                            post
+                            useful content related to Web Development and Programming
+                        </p>
+                        <br>
+                        <p class="p2">
+                            I'm open to Job opportunities where I can contribute, learn and grow. If you have a good
+                            opportunity
+                            that
+                            matches my skills and experience then don't hesitate to contact me.
+                        </p>
+                    </div>
+
+                    <div class="content-skills">
+                        <h3 class="title-content-skills">My Skills</h3>
+
+                        <div class="skills">
+                            <div class="skill_skill">HTML</div>
+                            <div class="skill_skill">CSS</div>
+                            <div class="skill_skill">JavaScript</div>
+                            <div class="skill_skill">React JS</div>
+                            <div class="skill_skill">GIT</div>
+                            <div class="skill_skill">Github</div>
+                            <div class="skill_skill">SEO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="primary-project-control">
+
+            <div id="projects" class="project-container">
+
+                <h2>Projects</h2>
+            </div>
+            <span class="project-p1">Here you will find some of the projects that I created </span>
+
+            <div class="projects-list">
+                <div class="project1">
+                    <div class="project-preview">
+                        <img src="mockup1.PNG" alt="project-1">
+                    </div>
+                    <div class="project-intro">
+                        <h1>MT CONSTRUCTION</h1>
+                        <p>Wilsonport is a multiservice logistics and transport company and I created their website from
+                            scratch using the frontend tools I know.</p>
+                        <div class="buttons">
+                            <a href="#projects"> <button class="btn" id="btn3">LIVE VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-list">
+                <div class="project1">
+                    <div class="project-preview">
+                        <img src="mockup1.PNG" alt="project-1">
+                    </div>
+                    <div class="project-intro">
+                        <h1>MT CONSTRUCTION</h1>
+                        <p>Wilsonport is a multiservice logistics and transport company and I created their website from
+                            scratch using the frontend tools I know.</p>
+                        <div class="buttons">
+                            <a href="#projects"> <button class="btn" id="btn3">LIVE VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-list">
+                <div class="project1">
+                    <div class="project-preview">
+                        <img src="mockup1.PNG" alt="project-1">
+                    </div>
+                    <div class="project-intro">
+                        <h1>MT CONSTRUCTION</h1>
+                        <p>Wilsonport is a multiservice logistics and transport company and I created their website from
+                            scratch using the frontend tools I know.</p>
+                        <div class="buttons">
+                            <a href="#projects"> <button class="btn" id="btn3">LIVE VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-list">
+                <div class="project1">
+                    <div class="project-preview">
+                        <img src="mockup1.PNG" alt="project-1">
+                    </div>
+                    <div class="project-intro">
+                        <h1>MT CONSTRUCTION</h1>
+                        <p>Wilsonport is a multiservice logistics and transport company and I created their website from
+                            scratch using the frontend tools I know.</p>
+                        <div class="buttons">
+                            <a href="#projects"> <button class="btn" id="btn3">LIVE VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-list">
+                <div class="project1">
+                    <div class="project-preview">
+                        <img src="mockup1.PNG" alt="project-1">
+                    </div>
+                    <div class="project-intro">
+                        <h1>MT CONSTRUCTION</h1>
+                        <p>Wilsonport is a multiservice logistics and transport company and I created their website from
+                            scratch using the frontend tools I know.</p>
+                        <div class="buttons">
+                            <a href="#projects"> <button class="btn" id="btn3">LIVE VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-list">
+                <div class="project1">
+                    <div class="project-preview">
+                        <img src="mockup1.PNG" alt="project-1">
+                    </div>
+                    <div class="project-intro">
+                        <h1>MT CONSTRUCTION</h1>
+                        <p>Wilsonport is a multiservice logistics and transport company and I created their website from
+                            scratch using the frontend tools I know.</p>
+                        <div class="buttons">
+                            <a href="#projects"> <button class="btn" id="btn3">LIVE VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-s">
+
+
+        <div class="primary-contact-control">
+
+            <div id="contact" class="contact-container">
+
+                <h2>Contact Me</h2>
+            </div>
+            <span class="contact-p1">Feel free to Contact me ! </span>
+
+            <div class="contact-section">
+                <form action="index_01.html" class="contact-form" method="post">
+                    <input type="text" class="contact-form-text" placeholder="Your Name">
+                    <input type="email" class="contact-form-text" placeholder="Your Email">
+                    <input type="text" class="contact-form-text" placeholder="Your Phone">
+                    <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+                    <input type="submit" class="contact-form-btn" value="Send">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+        <footer id="other" class="footer-section">
+            <div class="f-container">
+                <div class="sec aboutus">
+                    <h2>About Us</h2>
+                    <p>I'm a <span class="high-light">Frontend Web Developer </span> building the Front-end of
+                        Websites and Web Applications that leads
+                        to
+                        the
+                        success of the overall product. Check out some of my work in the <span></span>
+                    </p>
+                    <ul class="sci">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                    </ul>
+                </div>
+    
+                
+                <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#other">Other</a></li>
+                    </ul>
+                </div>
+                <div class="sec contact">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                     <li>
+                         <span><i class='fa fa-home'></i></span>
+                         <span>Sinhgad Institute <br>  Kondhwa Pune, Maharashtra 411048 <br> India. </span>
+                     </li>
+    
+                     <li>
+                         <span><i class='fa fa-phone'></i></span>
+                         <p><a href="+91-8623089814">+91-8623089814</a> </p>
+                     </li>
+    
+                     <li>
+                         <span><i class='fa fa-envelope'></i></span>
+                         <p><a href="avezqureshi14@gmail.com">avezqureshi14@gmail.com</a> </p>
+                     </li>
+    
+                    </ul>
+                    </div>
+    
+    
+            </div>
+            <div>
+                <div class="copyrightText">
+                    <p>Copyright  &copy; 2021 Avez Qureshi. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+   
+</body>
+
+</html>
