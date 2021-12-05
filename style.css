@@ -848,6 +848,8 @@ textarea.contact-form-text{
     align-items: center;
     min-height: 100%;
     flex-direction: column;
+    position: relative;
+
 }
 
 footer{
