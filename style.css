@@ -746,6 +746,7 @@ margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 111111;
 }
 .contact-container h2{
 
