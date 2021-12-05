@@ -9,6 +9,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 ::-moz-selection{
     color: #000;
     background: #339b54;
@@ -166,6 +167,16 @@ html{
     border: 2px solid #ffff;
     border-radius: 50%;
     
+}
+
+.mob{
+    padding-top: 0rem;
+}
+.fa-phone{
+    padding-top: 0rem;
+}
+.fa-envelope{
+    padding-top: 0rem;
 }
 
 .home-social .fa:hover{
@@ -851,11 +862,15 @@ footer{
     font-weight: 600;
 }
 
+.fullfoot{
+}
+
 footer .f-container{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 footer .f-container .sec{
@@ -867,7 +882,8 @@ footer .f-container .sec.aboutus {
 }
 
 footer .f-container  h2{
-    position: relative;
+    position: fixed;
+
     color: #000;
     font-weight: 500;
     margin-bottom: 15px;
@@ -884,8 +900,13 @@ footer .f-container h2:before{
 
 }
 
+.aboutContent{
+    padding-top: 3rem;
+}
+
 footer p{
     color: #000;
+    padding-top: 0.1rem;
 }
 
 .sci{
@@ -925,6 +946,10 @@ footer p{
     width: 25%;
 }
 
+.quicklinks ul{
+   padding-top: 3rem;
+}
+
 .quicklinks ul li{
     list-style: none; 
 }
@@ -946,6 +971,8 @@ footer p{
 }
 .contact .info{
      position: relative;
+     margin-left:-11px;
+     padding-top: 3rem;
 }
 .contact .info li{
     display: flex;
@@ -958,8 +985,7 @@ footer p{
     margin-right: 10px;
 }
 
-.contact .info li span{
-}
+
 
 .contact .info li a{
     
@@ -978,6 +1004,10 @@ footer p{
     padding:8px 100px  ;
     text-align: center;
     color:#999 ;
+}
+
+.copy{
+    padding-top: 2rem;
 }
 
 @media(max-width:991px){
