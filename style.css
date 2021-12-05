@@ -782,7 +782,6 @@ margin: auto;
 }
 .primary-contact-control{
     min-height: 100%;
-    position: relative;
     max-width: 120rem;
     margin: auto;
     width: 92%;
@@ -795,7 +794,6 @@ margin: auto;
     max-width: 600px;
     margin: auto;
     padding: 0, 10px;
-    overflow: hidden;
 }
 .contact-form-text{
     display: block;
