@@ -14,9 +14,26 @@
 <body>
     <div class="home-container">
 
+        <div class="homeContent_scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                <span>Scroll down</span>
+            </a>
+        </div>
+        <div class="homeContent_line"></div>
+
         <div id="toggle" class="menu">
             <h4>MENU</h4>
         </div>
+
+        <script>
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector(".menu");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+
+
+
         <div id="home" class="logo">
             <img src="avez-logo.png" alt="avez-logo" srcset="">
         </div>
@@ -59,9 +76,9 @@
         </script>
 
         <script>
-            window.addEventListener("scroll", function(){
+            window.addEventListener("scroll", function () {
                 var menu = document.querySelector("menu");
-                MENU.classList.toggle("menu",window.scrollY > 0);
+                MENU.classList.toggle("menu", window.scrollY > 0);
             })
         </script>
 
@@ -96,6 +113,7 @@
     <section>
 
         <div class="primary-about-control">
+            <div class="about_line"></div>
 
             <div id="about" class="about-container">
 
@@ -143,8 +161,10 @@
                             <div class="skill_skill">HTML</div>
                             <div class="skill_skill">CSS</div>
                             <div class="skill_skill">JavaScript</div>
+                            <div class="skill_skill">React JS</div>
                             <div class="skill_skill">Python</div>
                             <div class="skill_skill">Django</div>
+                            <div class="skill_skill">Bootstrap</div>
                             <div class="skill_skill">GIT</div>
                             <div class="skill_skill">Github</div>
                         </div>
@@ -156,305 +176,224 @@
 
     </section>
 
-    <section>
-       <div class="projectControl">
-           <div class="projectBox">
-               <ul>
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
- 
-                                Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
 
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
-                                   Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
-
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
-                                   Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
-
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
-                                   Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
-
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
-                                   Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
-
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
-                                   Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
-
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
-                                   Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
-
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
-                                   Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
-
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-                   <li>
-                       <div class="boxContent">
-                           <div class="image">
-                            <img src="mockup1.png" alt="">
-                           </div>
-                           <div class="content">
-                               <div class="head">
-                                   <h3>MT CONSTRUCTION</h3>
-                               </div>
-                               <div class="Pcontent">
-                                   Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
-                               </div>
-                               <div class="boxBtn">
-
-                                <button>LIVE PREVIEW</button>
-
-
-                               </div>
-                           </div>
-                       </div>
-                   </li>
-                   
-               </ul>
+    <section id="works" class="sWorks">
+           <div class="workContainer">
+            <h2>RECENT PROJECTS</h2>
+            <span class="p1">These are my Latest Recent Projects</span>
            </div>
-       </div>
-    </section>
-    <!-- <h1>MT CONSTRUCTION</h1>
-    <p>Wilsonport is a multiservice logistics and transport company and I created their website from
-        scratch using the frontend tools I know.</p>
-    <div class="buttons">
-        <a href="#projects"> <button class="btn" id="btn3">LIVE VIEW</button></a>
-    </div> -->
-    <section class="contact-s">
+           
+           <div class="projectSection">
 
-
-        <div class="primary-contact-control">
-
-            <div id="contact" class="contact-container">
-
-                <h2>Contact Me</h2>
+               <div class="project">
+                   <img src="bggg2.jpg" alt="" srcset="">
+               <div class="caption">
+                   <h1>Image</h1>
+               </div>
+           </div>
+           <div class="project">
+               <img src="bggg3.jpg" alt="" srcset="">
+               <div class="caption">
+                   <h1>Image</h1>
+               </div>
+           </div>
+           <div class="project">
+               <img src="bggg4.jpg" alt="" srcset="">
+               <div class="caption">
+                   <h1>Image</h1>
+               </div>
             </div>
-            <span class="contact-p1">Feel free to Contact me ! </span>
+           <div class="project">
+               <img src="bggg2.jpg" alt="" srcset="">
+               <div class="caption">
+                   <h1>Image</h1>
+               </div>
+           </div>
+           <div class="project">
+               <img src="bggg3.jpg" alt="" srcset="">
+               <div class="caption">
+                   <h1>Image</h1>
+               </div>
+           </div>
+           <div class="project">
+               <img src="bggg4.jpg" alt="" srcset="">
+               <div class="caption">
+                   <h1>Image</h1>
+               </div>
+           </div>
+           <div class="project">
+               <img src="bggg2.jpg" alt="" srcset="">
+               <div class="caption">
+                   <h1>Image</h1>
+               </div>
+           </div>
+           <div class="project">
+               <img src="bggg3.jpg" alt="" srcset="">
+               <div class="caption">
+                   <h1>Image</h1>
+                </div>
+            </div>
+        </div>
+            
+            
+    </section>
 
-            <div class="contact-section">
-                <form action="index_01.html" class="contact-form" method="post">
-                    <input type="text" class="contact-form-text" placeholder="Your Name">
-                    <input type="email" class="contact-form-text" placeholder="Your Email">
-                    <input type="text" class="contact-form-text" placeholder="Your Phone">
-                    <textarea class="contact-form-text" placeholder="Your Message"></textarea>
-                    <input type="submit" class="contact-form-btn" value="Send">
+    
+
+
+
+    <section class="contact">
+            <div class="contact_line"></div>
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Feel free to contact me</p>
+        </div>
+        <div class="container">
+            <!--container-->
+            <div class="contactInfo">
+                <!--contactInfo-->
+                <!-- #1 -->
+                <div class="box">
+                    <!--box-1-->
+                    <div class="icon"></div>
+                    <div class="text">
+                        <!--text-1-->
+                        <h3>Address</h3>
+                        <p>822, Bijapur Base, Jumma Peth, Shukruwar Peth, Solapur-413002</p>
+                    </div>
+                    <!--text-1-->
+                </div>
+                <!--box-1-->
+                <!-- #2 -->
+                <div class="box">
+                    <!--box-2-->
+                    <div class="icon"></div>
+                    <div class="text">
+                        <!--text-2-->
+                        <h3>Phone</h3>
+                        <p>86-23-08-98-14</p>
+                    </div>
+                    <!--text-2-->
+                </div>
+                <!--box-2-->
+                <!-- #3 -->
+                <div class="box">
+                    <!--box-3-->
+                    <div class="icon"></div>
+                    <div class="text">
+                        <!--text-3-->
+                        <h3>Email</h3>
+                        <p>avezqureshi14@gmail.com</p>
+                    </div>
+                    <!--text-3-->
+                </div>
+                <!--box-3-->
+
+            </div>
+            <!--contactInfo-->
+
+            <div class="contactForm">
+                <!--contactForm-->
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <!--inputBox1-->
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <!--inputBox1-->
+
+                    <div class="inputBox">
+                        <!--inputBox2-->
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <!--inputBox2-->
+
+                    <div class="inputBox">
+                        <!--inputBox3-->
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <!--inputBox3-->
+
+                    <div class="inputBox">
+                        <!--inputBox4-->
+                        <input type="submit" value="send">
+                    </div>
+                    <!--inputBox4-->
                 </form>
             </div>
+            <!--contactForm-->
         </div>
+        <!--container-->
 
     </section>
 
-        <footer id="other" class="footer-section">
-            <div class="fullfoot">
 
-                <div class="f-container">
-                    <div class="sec aboutus">
-                    <h2>About Us</h2>
-                    <p class="aboutContent">I'm a <span class="high-light">Frontend Web Developer </span> building the Front-end of
-                        Websites and Web Applications that leads
-                        to
-                        the
-                        success of the overall product. Check out some of my work in the <span></span>
-                    </p>
-                    <ul class="sci">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                        <li><a href="#" class="fa fa-youtube"></a></li>
-                    </ul>
-                </div>
-    
-                
-                <div class="sec quicklinks">
-                    <h2>Quick Links</h2>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#other">Other</a></li>
-                    </ul>
-                </div>
-                <div class="sec contact">
-                    <h2>Contact Info</h2>
-                    <ul class="info">
-                     <li>
-                         <span><i class='fa fa-home'></i></span>
-                         <span>Sinhgad Institute <br>  Kondhwa Pune, Maharashtra 411048 <br> India. </span>
-                     </li>
-                     
-                     <li>
-                         <span><i class='fa fa-phone'></i></span>
-                         <p>+91-8623089814</p>
-                     </li>
-    
-                     <li>
-                         <span><i class='fa fa-envelope'></i></span>
-                         <p>avezqureshi14@gmail.com</p>
-                     </li>
-                     
-                    </ul>
-                </div>
-    
 
+    <footer>
+        <div class="f-container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, culpa ad! Provident cupiditate
+                    delectus alias ipsum recusandae vitae! Laudantium, quisquam amet. Asperiores odio nostrum sapiente
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, culpa ad! Provident cupiditate
+                    delectus alias ipsum recusandae vitae! Laudantium, quisquam amet. Asperiores odio nostrum sapiente?
+                </p>
+                <ul class="sci">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
             </div>
-            <div>
-                <div class="copyrightText">
-                    <p class="copy">Copyright  &copy; 2021 Avez Qureshi. All Rights Reserved.</p>
+
+            
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec footcontact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                 <li>
+                     <span><i class='fa fa-home'></i></span>
+                     <span>Sinhgad Institute <br>  Kondhwa Pune, Maharashtra 411048 <br> India. </span>
+                 </li>
+
+                 <li>
+                     <span><i class='fa fa-phone'></i></span>
+                     <p><a href="+91-8623089814">+91-8623089814</a> </p>
+                 </li>
+
+                 <li>
+                     <span><i class='fa fa-envelope'></i></span>
+                     <p><a href="avezqureshi14@gmail.com">avezqureshi14@gmail.com</a> </p>
+                 </li>
+
+                </ul>
                 </div>
-            </div>
+
+
         </div>
-        </footer>
-   
+    </footer>
+    <div>
+        <div class="copyrightText">
+            <p>Copyright  &copy; 2022 Avez Qureshi. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
 </body>
 
 </html>
