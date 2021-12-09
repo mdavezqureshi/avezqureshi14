@@ -1139,6 +1139,12 @@ footer p{
     color: #fff;
 }
 
+.counter{
+    color: #ffff;
+    font-size: 2rem;
+}
+
+
 .copyrightText{
     width: 100%;
     background: #111;

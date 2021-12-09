@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 </head>
 
@@ -177,72 +178,72 @@
 
 
     <section id="work" class="sWorks">
-           <div class="workContainer">
+        <div class="workContainer">
             <h2>RECENT PROJECTS</h2>
             <span class="p1">These are my Latest Recent Projects</span>
-           </div>
-           
-           <div class="projectSection">
+        </div>
 
-               <div class="project">
-                   <img src="bggg2.jpg" alt="" srcset="">
-               <div class="caption">
-                   <h1>Image</h1>
-               </div>
-           </div>
-           <div class="project">
-               <img src="bggg3.jpg" alt="" srcset="">
-               <div class="caption">
-                   <h1>Image</h1>
-               </div>
-           </div>
-           <div class="project">
-               <img src="bggg4.jpg" alt="" srcset="">
-               <div class="caption">
-                   <h1>Image</h1>
-               </div>
+        <div class="projectSection">
+
+            <div class="project">
+                <img src="bggg2.jpg" alt="" srcset="">
+                <div class="caption">
+                    <h1>Image</h1>
+                </div>
             </div>
-           <div class="project">
-               <img src="bggg2.jpg" alt="" srcset="">
-               <div class="caption">
-                   <h1>Image</h1>
-               </div>
-           </div>
-           <div class="project">
-               <img src="bggg3.jpg" alt="" srcset="">
-               <div class="caption">
-                   <h1>Image</h1>
-               </div>
-           </div>
-           <div class="project">
-               <img src="bggg4.jpg" alt="" srcset="">
-               <div class="caption">
-                   <h1>Image</h1>
-               </div>
-           </div>
-           <div class="project">
-               <img src="bggg2.jpg" alt="" srcset="">
-               <div class="caption">
-                   <h1>Image</h1>
-               </div>
-           </div>
-           <div class="project">
-               <img src="bggg3.jpg" alt="" srcset="">
-               <div class="caption">
-                   <h1>Image</h1>
+            <div class="project">
+                <img src="bggg3.jpg" alt="" srcset="">
+                <div class="caption">
+                    <h1>Image</h1>
+                </div>
+            </div>
+            <div class="project">
+                <img src="bggg4.jpg" alt="" srcset="">
+                <div class="caption">
+                    <h1>Image</h1>
+                </div>
+            </div>
+            <div class="project">
+                <img src="bggg2.jpg" alt="" srcset="">
+                <div class="caption">
+                    <h1>Image</h1>
+                </div>
+            </div>
+            <div class="project">
+                <img src="bggg3.jpg" alt="" srcset="">
+                <div class="caption">
+                    <h1>Image</h1>
+                </div>
+            </div>
+            <div class="project">
+                <img src="bggg4.jpg" alt="" srcset="">
+                <div class="caption">
+                    <h1>Image</h1>
+                </div>
+            </div>
+            <div class="project">
+                <img src="bggg2.jpg" alt="" srcset="">
+                <div class="caption">
+                    <h1>Image</h1>
+                </div>
+            </div>
+            <div class="project">
+                <img src="bggg3.jpg" alt="" srcset="">
+                <div class="caption">
+                    <h1>Image</h1>
                 </div>
             </div>
         </div>
-            
-            
+
+
     </section>
 
-    
+
 
 
 
     <section id="contact" class="contact">
-            <div class="contact_line"></div>
+        <div class="contact_line"></div>
         <div class="overlay"></div>
         <div class="content">
             <h2>Contact Us</h2>
@@ -351,7 +352,7 @@
                 </ul>
             </div>
 
-            
+
             <div class="sec quicklinks">
                 <h2>Quick Links</h2>
                 <ul>
@@ -362,34 +363,35 @@
                 </ul>
             </div>
             <div class="sec footcontact">
-                <h2>Contact Info</h2>
-                <ul class="info">
-                 <li>
-                     <span><i class='fa fa-home'></i></span>
-                     <span>Sinhgad Institute <br>  Kondhwa Pune, Maharashtra 411048 <br> India. </span>
-                 </li>
+                <div class="counters">
 
-                 <li>
-                     <span><i class='fa fa-phone'></i></span>
-                     <p><a href="+91-8623089814">+91-8623089814</a> </p>
-                 </li>
-
-                 <li>
-                     <span><i class='fa fa-envelope'></i></span>
-                     <p><a href="avezqureshi14@gmail.com">avezqureshi14@gmail.com</a> </p>
-                 </li>
-
-                </ul>
+                    <h2>Lines of Code</h2>
+                    <div class="counter">10000</div>
+   
                 </div>
+            </div>
 
 
         </div>
     </footer>
     <div>
         <div class="copyrightText">
-            <p>Copyright  &copy; 2022 Avez Qureshi. All Rights Reserved.</p>
+            <p>Copyright &copy; 2022 Avez Qureshi. All Rights Reserved.</p>
         </div>
     </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 50000
+            });
+        });
+
+    </script>
 </body>
 
 </html>
