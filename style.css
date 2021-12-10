@@ -1051,6 +1051,7 @@ footer .f-container .sec.aboutus {
     width: 40%;
 }
 
+
 footer .f-container  h2{
     position: relative;
     color: #fff;
@@ -1129,6 +1130,8 @@ footer p{
     color: #fff;
 }
 
+
+
 .footcontact{
     width: calc(35% - 60px);
     margin-right: 0 !important;
@@ -1177,6 +1180,7 @@ footer p{
 }
 
 @media(max-width:991px){
+ 
     footer{
         padding:40px;
     }
@@ -1187,6 +1191,10 @@ footer p{
         margin-right: 0;
         margin-bottom: 40px;
     }
+    .footcontact{
+
+        margin-bottom: -19px;
+    }
     footer .f-container .sec.aboutus,
     .quicklinks,
     .footcontact{
@@ -1195,6 +1203,7 @@ footer p{
     .copyrightText{
         padding: 8px 40px;
     }
+
 }
 
 
