@@ -668,6 +668,26 @@ html{
     position: relative;
 }
 
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: #39b54a;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.bg:hover{
+    opacity: 0.8;
+}
+
 .caption{
     display: flex;
     justify-content: center;
@@ -677,11 +697,20 @@ html{
     left: 0;
     color: #39b54a;
     margin: 25px;
-    border: 1px solid #fff;
-    height: 90%;
-    width: 80%;
+    height: 10%;
+    width: 10%;
     opacity: 0;
     transition: 0.5s;
+}
+.material-icons{
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.705);
+     
+}
+.caption a{
+    color: #39b54a;
 }
 .caption h1{
     color: #39b54a;

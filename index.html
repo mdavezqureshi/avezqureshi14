@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Avez Qureshi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
@@ -186,53 +187,71 @@
         <div class="projectSection">
 
             <div class="project">
-                <img src="bggg2.jpg" alt="" srcset="">
+                <img src="bg1.jpg" alt="" srcset="">
+                <div class="bg"></div>
                 <div class="caption">
-                    <h1>Image</h1>
+                    <a href="#"> <span class="material-icons">
+                            insert_link
+                        </span>
+                    </a>
                 </div>
             </div>
+
             <div class="project">
-                <img src="bggg3.jpg" alt="" srcset="">
+                <img src="bg2.jpg" alt="" srcset="">
+                <div class="bg"></div>
                 <div class="caption">
-                    <h1>Image</h1>
+                    <a href="#"> <span class="material-icons">
+                            insert_link
+                        </span>
+                    </a>
                 </div>
             </div>
+
             <div class="project">
-                <img src="bggg4.jpg" alt="" srcset="">
+                <img src="bg3.jpg" alt="" srcset="">
+                <div class="bg"></div>
                 <div class="caption">
-                    <h1>Image</h1>
+                    <a href="#"> <span class="material-icons">
+                            insert_link
+                        </span>
+                    </a>
                 </div>
             </div>
+
             <div class="project">
-                <img src="bggg2.jpg" alt="" srcset="">
+                <img src="bg4.jpg" alt="" srcset="">
+                <div class="bg"></div>
                 <div class="caption">
-                    <h1>Image</h1>
+                    <a href="#"> <span class="material-icons">
+                            insert_link
+                        </span>
+                    </a>
                 </div>
             </div>
+
             <div class="project">
-                <img src="bggg3.jpg" alt="" srcset="">
+                <img src="bg5.jpg" alt="" srcset="">
+                <div class="bg"></div>
                 <div class="caption">
-                    <h1>Image</h1>
+                    <a href="#"> <span class="material-icons">
+                            insert_link
+                        </span>
+                    </a>
                 </div>
             </div>
+
             <div class="project">
-                <img src="bggg4.jpg" alt="" srcset="">
+                <img src="bg2.jpg" alt="" srcset="">
+                <div class="bg"></div>
                 <div class="caption">
-                    <h1>Image</h1>
+                    <a href="#" title="project6" > <span class="material-icons">
+                            insert_link
+                        </span>
+                    </a>
                 </div>
             </div>
-            <div class="project">
-                <img src="bggg2.jpg" alt="" srcset="">
-                <div class="caption">
-                    <h1>Image</h1>
-                </div>
-            </div>
-            <div class="project">
-                <img src="bggg3.jpg" alt="" srcset="">
-                <div class="caption">
-                    <h1>Image</h1>
-                </div>
-            </div>
+
         </div>
 
 
@@ -298,8 +317,7 @@
 
             <div class="contactForm">
                 <!--contactForm-->
-                <form   action="https://formspree.io/f/mjvlvobj"
-                method="POST">
+                <form action="https://formspree.io/f/mjvlvobj" method="POST" autocomplete="off">
                     <h2>Send Message</h2>
                     <div class="inputBox">
                         <!--inputBox1-->
@@ -317,7 +335,7 @@
 
                     <div class="inputBox">
                         <!--inputBox3-->
-                        <textarea name="message required="required"></textarea>
+                        <textarea name="message" required="required"></textarea>
                         <span>Type your Message...</span>
                     </div>
                     <!--inputBox3-->
@@ -350,8 +368,8 @@
                     delectus alias ipsum recusandae vitae! Laudantium, quisquam amet. Asperiores odio nostrum sapiente?
                 </p>
                 <ul class="sci">
-                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                    <li><a href="#" class="fa fa-github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/avez-qureshi-2bb420228/" class="fa fa-linkedin"></a></li>
+                    <li><a href="https://github.com/avezqureshi14" class="fa fa-github"></a></li>
                     <li><a href="#" class="fa fa-twitter"></a></li>
                 </ul>
             </div>
@@ -371,7 +389,7 @@
 
                     <h2>Lines of Code</h2>
                     <div class="counter">10000</div>
-   
+
                 </div>
             </div>
 
@@ -388,7 +406,7 @@
     <script src="jquery.counterup.min.js"></script>
 
     <script>
-        jQuery(document).ready(function($) {
+        jQuery(document).ready(function ($) {
             $('.counter').counterUp({
                 delay: 100,
                 time: 10000
@@ -397,28 +415,28 @@
 
     </script>
 
-<script>
-    var form = document.getElementById("my-form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
         }
-      }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-</script>
+        form.addEventListener("submit", handleSubmit)
+    </script>
 </body>
 
 </html>
