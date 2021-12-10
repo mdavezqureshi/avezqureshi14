@@ -933,6 +933,8 @@ html{
     width: 100%;
     padding: 22px 0;
     font-size: 16px;
+    font-weight:600;
+    font-family: 'Poppins', sans-serif;
     margin: 0px 0;
     border: none;
     border-bottom: 2px solid #fff;
