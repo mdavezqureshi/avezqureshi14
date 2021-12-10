@@ -728,6 +728,18 @@ html{
 
 }
 
+@media(max-width:280px){
+    .projectSection{
+        display: flex;
+        justify-content: center;
+        margin-top: -20rem;
+        margin-bottom: 7vw;
+        margin-right: 3vw;
+        margin-left: 3vw;
+        flex-wrap: wrap-reverse;
+    }
+}
+
 
 
 /* Work Section  */
