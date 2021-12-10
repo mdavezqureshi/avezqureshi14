@@ -1167,6 +1167,7 @@ footer p{
 .counter{
     color: #ffff;
     font-size: 2rem;
+    margin-bottom: -80px;
 }
 
 
@@ -1187,14 +1188,19 @@ footer p{
     footer .f-container{
         flex-direction: column;
     }
+
+    .footcontact{
+    
+        margin-bottom: -19px;
+}
+
+
     footer .f-container .sec{
         margin-right: 0;
         margin-bottom: 40px;
     }
-    .footcontact{
-
-        margin-bottom: -19px;
-    }
+    
+    
     footer .f-container .sec.aboutus,
     .quicklinks,
     .footcontact{
