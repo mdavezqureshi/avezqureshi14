@@ -442,7 +442,8 @@ html{
         font-size: 1.5rem;
     }
     .main-home-content{
-        transform: translateY(9rem) 
+        transform: translateY(9rem) ;
+        margin-top: -5rem;
     }
 }
 @media(max-width:300px){
@@ -707,7 +708,16 @@ html{
     }
 
 }
-@media(max-width:480px){
+@media(max-width:550px){
+    .projectSection{
+        display: flex;
+        justify-content: center;
+        margin-top: -20rem;
+        margin-bottom: 7vw;
+        margin-right: 6vw;
+        margin-left: 6vw;
+        flex-wrap: wrap-reverse;
+    }
     .project{
         flex: 100%;
     }
