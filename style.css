@@ -10,6 +10,10 @@
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     
 }
+
+body{
+    background: #7475791a;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -98,7 +102,7 @@ html{
     border: 1px solid black;
     position: absolute;
     right: 4.49rem;
-    top: -160px;
+    top: -64px;
     z-index: 1111;
 }
 .contact_line{
@@ -424,7 +428,11 @@ html{
         flex-wrap: wrap;
         flex-direction: column;
         transition: all 0.5s ease-in-out;
-    
+        margin-top: 2rem;
+    }
+
+    .buttons1 .btn{
+        padding-right: 3.5rem;
     }
     .buttons1 #btn1{
     padding-right: 61px;
@@ -440,6 +448,7 @@ html{
     }
     .main-home-content h2{
         font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
     .main-home-content{
         transform: translateY(9rem) ;
@@ -472,12 +481,27 @@ html{
 }
 /* About Section  */
 
+.content_details{
+    padding: 2rem;
+    box-shadow: 0px 0px 40px rgb(29 58 83 / 15%) !important;
+    border-radius: 0.5rem;
+    background: #ffff;
+}
+
+.content-skills{
+    padding: 2rem;
+    box-shadow: 0px 0px 40px rgb(29 58 83 / 15%) !important;
+    border-radius: 0.5rem;
+    background: #ffff;
+}
+
 .primary-about-control{
-    background: #ffffff ;
+    background:#f0f0f1 ;
     min-height: 100%;
     position: relative;
     max-width: 120rem;
     margin: auto;
+    margin-top: -6rem;
     width: 92%;
     transform: translateY(10rem);
 }
@@ -522,6 +546,7 @@ html{
     font-weight: 900;
     font-size: 2rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
 }
 .content_details .p2{
     font-size: 1.2rem;
@@ -532,7 +557,7 @@ html{
 
 .high-light{
     font-weight: 700;
-    color: rgb(65, 64, 64);
+    color: rgb(65, 64, 64,0.8);
 }
 .title-content-skills{
     font-weight: 900;
@@ -659,6 +684,7 @@ html{
     margin-right: 15vw;
     margin-left: 15vw;
     flex-wrap: wrap-reverse;
+  
 }
 
 .project{
