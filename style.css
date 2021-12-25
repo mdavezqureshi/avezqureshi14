@@ -687,8 +687,12 @@ html{
   
 }
 
-.project{
+.project {
+    display: flex;
+    justify-content: center;
     flex: 50%;
+    align-items: center;
+    cursor: pointer;
     overflow: hidden;
     transition: 0.5s;
     position: relative;
@@ -701,30 +705,27 @@ html{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.705);
-    color: #39b54a;
+    background: rgba(0, 0, 0, 4);
+    color: rgb(255, 0, 0);
     height: 100%;
     width: 100%;
     opacity: 0;
     transition: 0.5s;
-    
 }
+    
 
 .bg:hover{
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .caption{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 0;
-    left: 0;
-    color: #39b54a;
+    text-align: center;
+    color: rgb(255, 0, 0);
     margin: 25px;
+    margin-top: -5rem;
     height: 10%;
-    width: 10%;
+    width: 80%;
     opacity: 0;
     transition: 0.5s;
 }
@@ -740,6 +741,12 @@ html{
 }
 .caption h1{
     color: #39b54a;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project:hover img{
