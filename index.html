@@ -14,7 +14,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body>
+<body onload="preload()">
+    <div class="loading" id="aqloads">
+        <div class="loader">
+            <div class="prelogo"></div>
+            <h1>A</h1>
+        </div>
+         <h4>Developed by Avez Qureshi</h4>
+    </div>
     <div class="home-container">
 
         <div class="homeContent_scroll">
@@ -430,6 +437,14 @@
                  duration: 10000, // values from 0 to 3000, with step 50ms
              }
          );
+     </script>
+     <script>
+         var pre = document.getElementById("aqloads");
+         var bar = document.getElementById("toggle");
+         function preload(){
+             pre.style.display = "none";
+             bar.style.display = "flex";
+         }
      </script>
 </body>
 
